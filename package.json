@@ -1,0 +1,22 @@
+{
+  "name": "adventure-game",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gydori/adventure-game.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gydori/adventure-game/issues"
+  },
+  "homepage": "https://github.com/gydori/adventure-game#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.9"
+  }
+}
