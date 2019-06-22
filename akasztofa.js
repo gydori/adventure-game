@@ -9,7 +9,7 @@ const generateWord = () => {
   for (let i = 0; i < word.length; i++) {
     guessedWord.push('_');
   }
-  life = Math.floor(word.length / 2);
+  life = word.length + 3;
 };
 
 const printGame = () => {
@@ -46,7 +46,7 @@ const makeGuess = (e) => {
 };
 
 const main = () => {
-  console.log('Üdvözöllek az Akasztófa játékban!');
+  console.log('Teljesítsd az Akasztófa játékot!');
   generateWord();
   printGame();
   let readLine = require('readline-sync');
@@ -63,25 +63,15 @@ const main = () => {
     }
     if (isSolved() === true) {
       console.log('Nyertél');
-      break;
+      return 'Nyertél';
     }
     if (life === 0) {
       console.log('Veszítettél');
-      break;
+      return 'Veszítettél';
     }
   }
 };
 
-main();
-
 module.exports = {
-  dictionary,
-  word,
-  guessedWord,
-  lifeAkaszto: life,
-  generateWord,
-  printGame,
-  isSolved,
-  makeGuess,
   main
 };
